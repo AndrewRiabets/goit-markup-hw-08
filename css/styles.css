@@ -1,0 +1,92 @@
+/* акцент цвет текста 2196F3 */
+/* белый цвет текста FFFFFF */
+/* черный цвет текста 212121 */
+/* цвет параграфов 757575 */
+/* цвет почты и имейла в футере rgba(255, 255, 255, 0.6);*/
+
+:root {
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --title-text-color: #212121;
+  --secondary-bgc: #2f303a;
+}
+
+body {
+  font-family: roboto;
+  background-color: #ffffff;
+  color: #757575;
+  size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Логотип */
+.logo {
+  color: #000000;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.logo-first-color {
+  color: var(--accent-color);
+}
+
+/* навигация */
+.site-nav .link {
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* контакты */
+.conact-list .link {
+  color: #757575;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.conact-list .link:hover,
+.conact-list .link:focus {
+  color: var(--accent-color);
+}
+
+/* герой */
+.hero {
+  color: #ffffff;
+  background-color: var(--secondary-bgc);
+}
+
+/* кнопки */
+.button {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+
+.button.secondary {
+  background-color: var(--accent-color);
+  color: #f5f4fa;
+}
+
+/* заголовки */
+.features-title,
+.specialization,
+.team-title,
+.team-list .member {
+  color: var(--title-text-color);
+}
+
+
+
+/* портфолио */
+
