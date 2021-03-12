@@ -52,15 +52,21 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* контакты */
-.conact-list .link {
+.link {
   color: #757575;
   font-size: 14px;
   text-decoration: none;
 }
 
 .conact-list .link:hover,
-.conact-list .link:focus {
+.conact-list .link:focus,
+.conact-list .footer-link:hover,
+.conact-list .footer-link:focus {
   color: var(--accent-color);
 }
 
@@ -94,10 +100,7 @@ ul {
 .adress {
   background-color: var(--secondary-bgc);
 }
-.location {
-  color: var(--primery-white-color);
-}
-.adress-link {
+.footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
