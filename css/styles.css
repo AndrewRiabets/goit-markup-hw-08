@@ -34,6 +34,9 @@ ul {
 .logo-first-color {
   color: var(--accent-color);
 }
+.logo-white-color {
+  color: var(--primery-white-color);
+}
 
 /* навигация */
 .site-nav .link {
@@ -82,11 +85,25 @@ ul {
 .features-title,
 .specialization,
 .team-title,
-.team-list .member {
+.team-list .member,
+.project {
   color: var(--title-text-color);
 }
 
-
+/* футер */
+.adress {
+  background-color: var(--secondary-bgc);
+}
+.location {
+  color: var(--primery-white-color);
+}
+.adress-link {
+  color: rgba(255, 255, 255, 0.6);
+}
 
 /* портфолио */
 
+.filter .filter-button:focus,
+.filter .filter-button:hover {
+  background-color: var(--accent-color);
+}
