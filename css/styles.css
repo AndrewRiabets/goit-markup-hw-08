@@ -6,7 +6,7 @@
 
 :root {
   --accent-color: #2196f3;
-  --primery-white-color: #ffffff;
+  --primary-white-color: #ffffff;
   --title-text-color: #212121;
   --base-text-color: #757575;
   --secondary-bgc: #2f303a;
@@ -14,7 +14,7 @@
 
 body {
   font-family: roboto, sans-serif;
-  background-color: var(--primery-white-color);
+  background-color: var(--primary-white-color);
   color: var(--base-text-color);
   letter-spacing: 0.03em;
 }
@@ -38,7 +38,7 @@ ul {
   color: var(--accent-color);
 }
 .logo-white-color {
-  color: var(--primery-white-color);
+  color: var(--primary-white-color);
 }
 
 /* навигация и контакты */
@@ -64,13 +64,15 @@ ul {
 .contact-list .link:hover,
 .contact-list .link:focus,
 .footer-contact-list .link:hover,
-.footer-contact-list .link:focus {
+.footer-contact-list .link:focus,
+.footer-contact-list .location:hover,
+.footer-contact-list .location:focus {
   color: var(--accent-color);
 }
 
 /* герой */
 .hero {
-  color: var(--primery-white-color);
+  color: var(--primary-white-color);
   background-color: var(--secondary-bgc);
   font-weight: 900;
   font-size: 44px;
@@ -82,7 +84,7 @@ ul {
 /* кнопки */
 .hero .button {
   background-color: var(--accent-color);
-  color: var(--primery-white-color);
+  color: var(--primary-white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -133,12 +135,16 @@ ul {
 .adress {
   background-color: var(--secondary-bgc);
 }
-.footer-contact-list.location,
+.footer-contact-list .location,
 .footer-contact-list .link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+}
+
+.footer-contact-list .location {
+  color: var(--primary-white-color);
 }
 .footer-contact-list .link {
   color: rgba(255, 255, 255, 0.6);
