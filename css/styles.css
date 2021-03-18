@@ -10,6 +10,7 @@
   --title-text-color: #212121;
   --base-text-color: #757575;
   --secondary-bgc: #2f303a;
+  --project-sec-gap: 30px;
 }
 
 body {
@@ -19,9 +20,28 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* не по дз но точки возле ссылок мучают глаза */
+h1, h2, h3, ul, p {
+  margin: 0;
+  padding: 0px;
+}
+
 ul {
-  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 /* Логотип */
@@ -30,7 +50,7 @@ ul {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-decoration: none;
 }
 
@@ -43,15 +63,40 @@ ul {
 
 /* навигация и контакты */
 .site-nav .link,
-.contact-list .link {
+.contact .link {
+  display: block;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top:10px;
+  padding-bottom: 10px;
 }
 
+.header,
+.main-nav, 
+.site-nav, 
+.contact.list  {
+  display: flex;
+}
+
+.site-nav {
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact .item + .item {
+  margin-left: 12px;
+}
+
+.contact {
+  margin-left: auto;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -61,13 +106,17 @@ ul {
   color: var(--accent-color);
 }
 
-.contact-list .link:hover,
-.contact-list .link:focus,
+.contact .link:hover,
+.contact .link:focus,
 .footer-contact-list .link:hover,
 .footer-contact-list .link:focus,
 .footer-contact-list .location:hover,
 .footer-contact-list .location:focus {
   color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
 }
 
 /* герой */
@@ -81,6 +130,10 @@ ul {
   text-align: center;
 }
 
+.hero-title {
+  margin-bottom: 30px;
+}
+
 /* кнопки */
 .hero .button {
   background-color: var(--accent-color);
@@ -89,7 +142,11 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
-}
+  border-radius: 4px;
+  padding: 11px 32px;
+  min-width: 200px;
+  border: transparent;
+  }
 
 /* цвет заголовков */
 .features-title,
@@ -101,10 +158,16 @@ ul {
 }
 
 /* Преимущества */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -135,23 +198,23 @@ ul {
 .adress {
   background-color: var(--secondary-bgc);
 }
-.footer-contact-list .location,
-.footer-contact-list .link {
+.footer-contact .location,
+.footer-contact .link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
 }
 
-.footer-contact-list .location {
+.footer-contact .location {
   color: var(--primary-white-color);
 }
 
-.footer-contact-list .link {
+.footer-contact .link {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* портфолио */
+/* портфолио *//* портфолио *//* портфолио */
 
 .filter .filter-button:focus,
 .filter .filter-button:hover {
@@ -159,14 +222,56 @@ ul {
   cursor: pointer;
 }
 
+.filter.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.filter > .item:not(:last-child) {
+  margin-right: 8px;
+  }
+
+
 .portfolio .project {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
+  
 }
 
 .portfolio .service {
   font-size: 16px;
   line-height: 1.88;
+}
+
+.project-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: calc(-1 * var(--project-sec-gap));
+  margin-bottom: calc(-1 * var(--project-sec-gap));
+
+}
+
+.project-set .item {
+  flex-basis: calc(100% / 3 - var(--project-sec-gap));
+  margin-left: var(--project-sec-gap);
+  margin-bottom: var(--project-sec-gap);
+
+  
+}
+
+.picture {
+  display: block; 
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+
 }
