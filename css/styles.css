@@ -30,6 +30,11 @@ ul {
   margin-bottom: 0px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -42,6 +47,10 @@ ul {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  
 }
 
 /* Логотип */
@@ -92,6 +101,7 @@ ul {
 
 .contact .item + .item {
   margin-left: 12px;
+  
 }
 
 .contact {
@@ -146,28 +156,42 @@ ul {
   padding: 11px 32px;
   min-width: 200px;
   border: transparent;
-  }
+  width: 200px;
+  height: 50px;
+}
 
 /* цвет заголовков */
 .features-title,
 .specialization,
 .team-title,
-.team-list .member,
+.team .member,
 .project {
   color: var(--title-text-color);
 }
 
 /* Преимущества */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+.features.list {
+  display: flex;
+  flex-wrap: wrap;
+  
 }
+
+.features > .item {
+  width: 270px;
+}
+
+.features > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .features-text {
@@ -181,17 +205,53 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.specialization-list {
+  display: flex;
+}
+
+.specialization-list > .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* наша команда */
-.team-list .member {
+.team-member {
+  background-color: #F5F4FA;
+}
+
+.team {
+  display: flex;
+}
+
+.team .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.member-content {
+  text-align: center; 
+}
+
+.team .member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
-.team-list .position {
+.team .position {
   font-size: 16px;
   line-height: 1.19;
+  padding-bottom: 30px;
+}
+
+.member {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 /* футер */
@@ -228,7 +288,6 @@ ul {
   justify-content: center;
 }
 
-
 .filter > .item:not(:last-child) {
   margin-right: 8px;
   }
@@ -251,18 +310,14 @@ ul {
 .project-set {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   margin-left: calc(-1 * var(--project-sec-gap));
   margin-bottom: calc(-1 * var(--project-sec-gap));
-
 }
 
 .project-set .item {
   flex-basis: calc(100% / 3 - var(--project-sec-gap));
   margin-left: var(--project-sec-gap);
   margin-bottom: var(--project-sec-gap);
-
-  
 }
 
 .picture {
