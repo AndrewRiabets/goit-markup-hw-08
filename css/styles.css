@@ -49,7 +49,7 @@ ul {
 .container{
   width: 1200px;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -89,8 +89,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top:10px;
-  padding-bottom: 10px;
+}
+
+.contact .link {
+  color: var(--base-text-color);
 }
 
 .header,
@@ -98,6 +100,7 @@ ul {
 .site-nav, 
 .contact.list  {
   display: flex;
+  align-items: center;
 }
 
 .site-nav {
@@ -140,17 +143,20 @@ ul {
 
 /* герой */
 .hero {
+  height: 600px;
   color: var(--primary-white-color);
   background-color: var(--secondary-bgc);
+  text-align: center;
+}
+
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-}
-
-.hero-title {
-  margin-bottom: 30px;
+  padding-top: 200px;
+  text-transform: uppercase;
 }
 
 /* кнопки */
@@ -159,14 +165,17 @@ ul {
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
+  display: inline-block;
   cursor: pointer;
+  margin-top: 30px;
+  padding: 10px 32px;
   border-radius: 4px;
-  padding: 11px 32px;
-  min-width: 200px;
+  border: none;
   border: transparent;
   width: 200px;
   height: 50px;
+  
 }
 
 /* цвет заголовков */
@@ -183,7 +192,6 @@ ul {
 .features.list {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .features > .item {
@@ -193,7 +201,6 @@ ul {
 .features > .item:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .features-title {
   font-weight: 700;
@@ -266,13 +273,18 @@ ul {
 /* футер */
 .adress {
   background-color: var(--secondary-bgc);
+  height: 252px;
+  padding-top: 60px;
 }
+
 .footer-contact .location,
 .footer-contact .link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  display: block;
+  margin-bottom: 9px;
 }
 
 .footer-contact .location {
@@ -281,16 +293,38 @@ ul {
 
 .footer-contact .link {
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
+
+
+.adress-contacts {
+  padding-top: 20px;
 }
 
 /* портфолио *//* портфолио *//* портфолио */
 
 /* фильтр */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-button {
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  min-width: 73px;
+  padding: 6px 22px;
+}
+
 .filter .filter-button:focus,
 .filter .filter-button:hover {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+
+
 
 .filter.list {
   display: flex;
@@ -322,21 +356,19 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--project-sec-gap));
   margin-bottom: calc(-1 * var(--project-sec-gap));
-  background-color:teal;
+  text-decoration: none;
 }
 
 .project-set .item {
   flex-basis: calc(100% / 3 - var(--project-sec-gap));
   margin-left: var(--project-sec-gap);
   margin-bottom: var(--project-sec-gap);
-  background-color: red;
 }
 
 .picture {
   display: block; 
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  background-color:teal;
 }
 
 .card-content {
@@ -345,4 +377,9 @@ ul {
   border-left: 1px solid #eeeeee;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
