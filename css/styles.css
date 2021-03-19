@@ -30,6 +30,11 @@ ul {
   margin-bottom: 0px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -57,8 +62,7 @@ ul {
   margin-right: auto;
   align-items: center;
   border-bottom: 1px solid #ECECEC;
-  padding-top: 25px;
-  padding-bottom: 25px;
+
   
 }
 
@@ -89,6 +93,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .contact .link {
@@ -311,6 +317,9 @@ ul {
 }
 
 .filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.px;
   text-align: center;
   border-radius: 4px;
   border: none;
@@ -321,10 +330,9 @@ ul {
 .filter .filter-button:focus,
 .filter .filter-button:hover {
   background-color: var(--accent-color);
+  color: var(--primary-white-color);;
   cursor: pointer;
 }
-
-
 
 .filter.list {
   display: flex;
@@ -356,8 +364,8 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--project-sec-gap));
   margin-bottom: calc(-1 * var(--project-sec-gap));
-  text-decoration: none;
 }
+
 
 .project-set .item {
   flex-basis: calc(100% / 3 - var(--project-sec-gap));
@@ -369,6 +377,8 @@ ul {
   display: block; 
   width: 100%;
   height: auto;
+  margin: 0px;
+  
 }
 
 .card-content {
@@ -377,9 +387,6 @@ ul {
   border-left: 1px solid #eeeeee;
   padding-left: 24px;
   padding-right: 24px;
+  text-decoration: none;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
