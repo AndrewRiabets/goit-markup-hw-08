@@ -36,11 +36,9 @@ ul {
 }
 
 .container{
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .header {
@@ -48,8 +46,8 @@ ul {
   margin-right: auto;
   align-items: center;
   border-bottom: 1px solid #ECECEC;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   
 }
 
@@ -276,6 +274,7 @@ ul {
 
 /* портфолио *//* портфолио *//* портфолио */
 
+/* фильтр */
 .filter .filter-button:focus,
 .filter .filter-button:hover {
   background-color: var(--accent-color);
@@ -292,7 +291,7 @@ ul {
   margin-right: 8px;
   }
 
-
+/* карточки портфолио */
 .portfolio .project {
   font-weight: 700;
   font-size: 18px;
@@ -312,21 +311,27 @@ ul {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--project-sec-gap));
   margin-bottom: calc(-1 * var(--project-sec-gap));
+  background-color:teal;
 }
 
 .project-set .item {
   flex-basis: calc(100% / 3 - var(--project-sec-gap));
   margin-left: var(--project-sec-gap);
   margin-bottom: var(--project-sec-gap);
+  background-color: red;
 }
 
 .picture {
   display: block; 
   max-width: 100%;
+  height: auto;
+  background-color:teal;
 }
 
 .card-content {
-  padding: 20px 24px;
-  border: 1px solid #EEEEEE;
-
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding-left: 24px;
+  padding-right: 24px;
 }
