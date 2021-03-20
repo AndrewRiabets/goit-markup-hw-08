@@ -97,11 +97,20 @@ ul {
   padding-bottom: 25px;
 }
 
+/* .site-nav .item:not(:last-child) {
+  margin-right: 40px;
+} */
+
 .contact .link {
   color: var(--base-text-color);
 }
+.contact .item:not(:last-child) {
+  padding-right: 50px;
+}
 
-.header,
+
+
+.header .container,
 .main-nav, 
 .site-nav, 
 .contact.list  {
@@ -240,7 +249,7 @@ ul {
 
 /* наша команда */
 .team-member {
-  background-color: #F5F4FA;
+  background-color: var(--primary-white-color);
 }
 
 .team {
