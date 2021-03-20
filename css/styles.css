@@ -375,10 +375,8 @@ ul {
 
 .picture {
   display: block; 
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin: 0px;
-  
 }
 
 .card-content {
@@ -387,6 +385,5 @@ ul {
   border-left: 1px solid #eeeeee;
   padding-left: 24px;
   padding-right: 24px;
-  text-decoration: none;
 }
 
