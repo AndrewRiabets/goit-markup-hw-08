@@ -342,7 +342,7 @@ ul {
 
 .filter > .item:not(:last-child) {
   margin-right: 8px;
-  }
+}
 
 /* карточки портфолио */
 .portfolio .project {
@@ -357,6 +357,7 @@ ul {
 .portfolio .service {
   font-size: 16px;
   line-height: 1.88;
+  color: var(--base-text-color);
 }
 
 .project-set {
@@ -371,6 +372,10 @@ ul {
   flex-basis: calc(100% / 3 - var(--project-sec-gap));
   margin-left: var(--project-sec-gap);
   margin-bottom: var(--project-sec-gap);
+}
+
+.project-link {
+  text-decoration: none;
 }
 
 .picture {
