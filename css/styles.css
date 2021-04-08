@@ -29,6 +29,10 @@ ul {
   margin-bottom: 0px;
 }
 
+img {
+  display: block;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -300,9 +304,46 @@ ul {
   display: flex;
 }
 
-.specialization-list > .item:not(:last-child) {
+
+
+.specialization-list > .item:not(:last-child),
+.specialization-lable:not(:last-child)  {
   margin-right: 30px;
 }
+
+.specialization-lable .item {
+  display: block;
+}
+
+.specialization-thumb {
+  position: relative;
+}
+
+.specialization-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+
+.specialization-text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-white-color);
+  
+}
+
 
 /* наша команда */
 .team-member {
