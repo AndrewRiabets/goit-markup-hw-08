@@ -214,6 +214,51 @@ img {
   text-transform: uppercase;
 }
 
+/* Модальное окно */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal {
+  width: 30px;
+  height: 30px;
+  margin: 8px 8px 543px 490px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: var(--primary-white-color);
+}
+
 /* кнопки */
 .hero .button {
   background-color: var(--accent-color);
@@ -304,10 +349,8 @@ img {
   display: flex;
 }
 
-
-
 .specialization-list > .item:not(:last-child),
-.specialization-lable:not(:last-child)  {
+.specialization-lable:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -328,7 +371,6 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-
 .specialization-text {
   position: absolute;
   font-weight: 700;
@@ -341,9 +383,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--primary-white-color);
-  
 }
-
 
 /* наша команда */
 .team-member {
@@ -622,7 +662,6 @@ img {
   margin-bottom: var(--project-sec-gap);
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .project-set .item:hover {
@@ -644,7 +683,6 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translate(0%, 100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .project-set .item:hover .project-overlay {
@@ -661,7 +699,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .project-link {
   text-decoration: none;
