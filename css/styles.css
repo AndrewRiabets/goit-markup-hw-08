@@ -254,7 +254,6 @@ img {
 .close-modal {
   position: absolute;
   top: 0px;
-  left: 0px;
   width: 30px;
   height: 30px;
   margin: 8px 8px 543px 490px;
@@ -262,6 +261,13 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: var(--primary-white-color);
+}
+
+.close-modal svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-call {
@@ -332,28 +338,67 @@ img {
   top: 50%;
   left: 12px;
   display: inline-block;
-  
 }
 
 .modal-list input {
   padding: 12px 12px 12px 42px;
 }
 
-.modal-list input:focus ~ .modal-icon{
+.modal-list:focus-within > .modal-icon {
   fill: var(--accent-color);
 }
 
+.modal-list:focus-within > input,
+.modal-list:focus-within > textarea {
+  outline: 0;
+  border: 1px solid var(--accent-color);
+}
 
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
 
+.policy-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.checkbox-icon {
+  display: inline-block;
+  margin-right: 7px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  fill: var(--primary-white-color);
+  
+  
+}
 
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border: none;
+  fill: var(--primary-white-color);
+}
 
 .modal-policy {
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
   text-align: center;
+  color: #757575;
+}
+
+.contract {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent-color);
+  text-decoration-line: underline;
+  margin-left: 3px;
+  text-decoration-skip-ink: none;
 }
 
 .modal-button {
@@ -374,8 +419,6 @@ img {
   color: var(--primary-white-color);
 }
 
-
-
 /* кнопки */
 .hero .button {
   background-color: var(--accent-color);
@@ -393,8 +436,6 @@ img {
   width: 200px;
   height: 50px;
 }
-
-
 
 /* цвет заголовков */
 .features-title,
@@ -727,6 +768,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
+  outline: 0;
 }
 
 .subscribe input::placeholder {
@@ -755,10 +797,6 @@ img {
 .subscribe-icon {
   margin-left: 10px;
 }
-
-
-
-
 
 /* портфолио */ /* портфолио */ /* портфолио */
 
