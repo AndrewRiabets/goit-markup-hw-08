@@ -417,6 +417,7 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--primary-white-color);
+  border: none;
 }
 
 /* кнопки */
@@ -816,6 +817,7 @@ img {
   border: none;
   min-width: 73px;
   padding: 6px 22px;
+  outline: none;
 }
 
 .filter .filter-button {
