@@ -430,8 +430,8 @@ a {
 .specialization__title,
 .team__title,
 .team-member__name,
-.project,
-.client-title {
+.project-card__title,
+.clients__title {
   color: var(--title-text-color);
 }
 
@@ -891,7 +891,6 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   padding-bottom: 4px;
-  color: var(--title-text-color);
 }
 
 .project-card__service {
