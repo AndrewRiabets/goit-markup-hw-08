@@ -21,9 +21,9 @@ ul {
   list-style: none;
 }
 
-// img {
-//   display: block;
-// }
+img {
+  display: block;
+}
 
 a {
   text-decoration: none;
@@ -40,22 +40,16 @@ a {
   overflow: hidden;
 }
 
-.container {
-  width: 480px;
-  margin: 0 auto;
-  padding: 0 15px 0 15px;
-}
-
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-// .container {
-//   width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-// }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 /* цвет заголовков */
 .features__title,

@@ -1,7 +1,8 @@
 /* Наши клиенты */
-.clients__title {
+.clients {
+  .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
@@ -9,22 +10,29 @@
 .clients-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
-
-  &__list:not(:last-child) {
-  margin-right: 30px;
+  margin-top: 30px;
+  justify-content: space-between;
 }
 
-  &__icon {
-  fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-}
+  .clients-cards__list {
+    width: calc(
+      (100% - 30px) / 2
+    );
+    justify-content: space-between;
+  }
+// .clients-cards__list:not(:last-child) {
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+// }
+
+  .clients-cards__list:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
 
 .clients-cards__link {
   display: inline-flex;
   color: var(--icon-color);
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 5px;
@@ -33,14 +41,16 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &:hover,
-  &:focus {
+.clients-cards__link:hover,
+.clients-cards__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
+
+.clients-cards__icon {
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
+}

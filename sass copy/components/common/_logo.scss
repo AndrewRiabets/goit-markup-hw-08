@@ -6,11 +6,11 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
 
-  &--accent-color {
+.logo--accent-color {
   color: var(--accent-color);
 }
-  &--white-color {
+.logo--white-color {
   color: var(--primary-white-color);
-}
 }

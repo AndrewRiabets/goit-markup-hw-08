@@ -1,7 +1,8 @@
 /* герой */
+
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   color: var(--primary-white-color);
@@ -9,25 +10,24 @@
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bg-img.jpg);
-  background-color: var(--secondary-bgc);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  );
+  // url(../images/hero-bg-img.jpg);
+  // background-position: center;
   text-align: center;
 
-  &__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  padding-top: 200px;
-  text-transform: uppercase;
+  
+  
+    &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.65;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding-top: 118px;
+    text-transform: uppercase;
 }
 
-  .hero__button {
+  &__button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-weight: 700;
@@ -44,7 +44,48 @@
   height: 50px;
 }
 }
+// .hero {
+//   max-width: 1600px;
+//   height: 600px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   color: var(--primary-white-color);
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/hero-bg-img.jpg);
+//   background-color: var(--secondary-bgc);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   text-align: center;
 
+//   &__title {
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   letter-spacing: 0.06em;
+//   text-align: center;
+//   padding-top: 200px;
+//   text-transform: uppercase;
+// }
 
-
-
+//   .hero__button {
+//   background-color: var(--accent-color);
+//   color: var(--primary-white-color);
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   display: inline-block;
+//   cursor: pointer;
+//   margin-top: 30px;
+//   padding: 10px 32px;
+//   border-radius: 4px;
+//   border: none;
+//   border: transparent;
+//   width: 200px;
+//   height: 50px;
+// }
+// }
