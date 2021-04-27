@@ -47,9 +47,15 @@ a {
 }
 
 .container {
-  width: 480px;
+  overflow-x: hidden;
   margin: 0 auto;
   padding: 0 15px 0 15px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .section {
@@ -102,15 +108,34 @@ a {
   display: none;
 }
 
+.header__menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header__menu-button--cross {
+  display: none;
+}
+
+.header__menu-button.is-open .header__menu-button--cross {
+  display: block;
+}
+
+.header__menu-button.is-open .header__menu-button--menu {
+  display: none;
+}
+
 /* навигация и контакты */
 /* Модальное окно */
-.modal {
+.backdrop {
   display: none;
 }
 
 /* герой */
 .hero {
-  width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -154,7 +179,7 @@ a {
 
 .features__icon {
   display: flex;
-  width: 450px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   background-color: #f5f4fa;
@@ -187,7 +212,6 @@ a {
 /* наша команда */
 .team {
   background-color: #f5f4fa;
-  width: 100%;
 }
 
 .team__title {
@@ -269,26 +293,28 @@ a {
   text-align: center;
 }
 
-.clients .clients-cards {
+.clients-cards {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  justify-content: space-between;
 }
 
-.clients .clients-cards__list {
+.clients-cards__list {
   width: calc( (100% - 30px) / 2);
-  justify-content: space-between;
 }
 
-.clients .clients-cards__list:nth-child(-n + 4) {
+.clients-cards__list:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.clients-cards__list:nth-child(-n + 4) {
   margin-bottom: 30px;
 }
 
-.clients .clients-cards__link {
+.clients-cards__link {
   display: inline-flex;
   color: var(--icon-color);
-  width: 210px;
+  width: 100%;
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 5px;
@@ -297,13 +323,12 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients .clients-cards__link:hover,
-.clients .clients-cards__link:focus {
+.clients-cards__link:hover, .clients-cards__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.clients .clients-cards__icon {
+.clients-cards__icon {
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -314,6 +339,7 @@ a {
   height: 603px;
   padding-top: 60px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .adress__location,
@@ -385,7 +411,7 @@ a {
 }
 
 .subscribe input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -535,5 +561,29 @@ a {
 
 .project-card:hover .project-card__overlay {
   transform: translate(0);
+}
+
+.backdrop-mobile {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-mobile.is-hidden {
+  display: none;
+}
+
+.modal-mobile {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

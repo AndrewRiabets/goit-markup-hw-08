@@ -41,13 +41,13 @@ a {
 }
 
 .container {
-  width: 480px;
+  overflow-x: hidden;
   margin: 0 auto;
   padding: 0 15px 0 15px;
 
-  // @media (min-width: 480px) {
-    
-  // }
+  @media (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .section {
