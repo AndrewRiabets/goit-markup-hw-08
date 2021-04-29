@@ -4,8 +4,12 @@
   justify-content: center;
   margin-bottom: 40px;
   flex-wrap: wrap;
-  justify-content: flex-start;
   margin-top: 30px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+  }
+
 
   
 }

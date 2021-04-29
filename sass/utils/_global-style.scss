@@ -75,3 +75,7 @@ a {
 .clients__title {
   color: var(--title-text-color);
 }
+
+body.modal-open {
+  overflow: hidden;
+}
