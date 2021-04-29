@@ -3,7 +3,6 @@
   right: 10px;
   top: 10px;
   z-index: 5;
-  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -40,11 +39,10 @@
     max-width: 480px;
     max-height: 796px;
     background-color: #fff;
-    padding: 48px 83px 48px 40px;
+    padding: 48px 15px 48px 40px;
     transform: translate(-50%, 0%);
     z-index: 4;
-    overflow-x: scroll;
-
+    
     &.is-open {
     display: block;
   }
@@ -55,5 +53,4 @@
     display: flex;
   }
 }
-
 
