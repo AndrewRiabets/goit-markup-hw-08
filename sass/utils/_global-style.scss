@@ -6,6 +6,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -23,13 +27,11 @@ ul {
 
 img {
   display: block;
-  
 }
 
 a {
   text-decoration: none;
 }
-
 
 .visually-hidden {
   position: absolute !important;
@@ -66,12 +68,6 @@ a {
   padding-bottom: 30px;
 }
 
-// .container {
-//   width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-// }
-
 /* цвет заголовков */
 .features__title,
 .specialization__title,
@@ -82,6 +78,3 @@ a {
   color: var(--title-text-color);
 }
 
-body.modal-open {
-  overflow: hidden;
-}

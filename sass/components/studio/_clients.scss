@@ -8,7 +8,6 @@
   }
 }
 
-
 .clients-cards {
   &__link {
     display: inline-flex;
@@ -44,13 +43,8 @@
     &__list {
       width: calc((100% - 30px) / 2);
     }
-  //   @media screen and (min-width: 768px) {
-  //     width: calc((100% - 60px) / 3);
-  //   }
-  // }
 
-
-  &__list:nth-child(-n + 4) {
+    &__list:nth-child(-n + 4) {
     margin-bottom: 30px;
   }  
 }
@@ -80,6 +74,4 @@
     display: flex;
     padding-bottom: 30px;
 }
-
-
 }
