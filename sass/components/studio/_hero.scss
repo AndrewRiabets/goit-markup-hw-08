@@ -45,6 +45,19 @@
   height: 50px;
 }
 }
+
+// desctop
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    padding-top: 200px;
+  }
+}
+
 // .hero {
 //   max-width: 1600px;
 //   height: 600px;

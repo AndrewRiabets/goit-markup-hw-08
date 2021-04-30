@@ -55,7 +55,7 @@
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-member:nth-child(2n+1) {
         margin-right: 30px;
   }
@@ -64,6 +64,33 @@
     margin-bottom: 30px;
   }
 }
+
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .team-member {
+    width: calc((100% - 90px) / 4);
+  }
+
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-top: 30px;
+  }
+
+  .team-member:not(:last-child) {
+    margin-right: 30px;
+  }
+  .team-list {
+  padding-bottom: 60px;
+  }
+}
+
+
+
+
+
 
 .social-icons {
   display: flex;

@@ -1,6 +1,6 @@
 /* Наши клиенты */
 .clients {
-  .clients__title {
+  &__title {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
@@ -65,4 +65,21 @@
   .clients-cards__list:nth-child(-n + 3) {
     margin-bottom: 30px;
   }
+}
+
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    padding-top: 30px;
+  }
+
+  .clients-cards__list {
+    width: calc((100% - 150px) / 6);
+    display: flex;
+    padding-bottom: 30px;
+}
+
+
 }
