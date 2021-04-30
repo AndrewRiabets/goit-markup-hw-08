@@ -21,9 +21,10 @@ ul {
   list-style: none;
 }
 
-// img {
-//   display: block;
-// }
+img {
+  display: block;
+  
+}
 
 a {
   text-decoration: none;
@@ -56,6 +57,7 @@ a {
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    background-size: contain;
   }
 }
 

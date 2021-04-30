@@ -4,9 +4,11 @@
   padding-top: 60px;
   text-align: center;
   margin-top: 30px;
+  
 
   @media screen and (max-width: 767px) {
     height: 603px;
+    
   }
 
   @media screen and (min-width: 768px) {
@@ -15,6 +17,7 @@
 
   @media screen and (min-width: 1200px) {
     height: 252px;
+    background-size: 10px;
   }
 }
 

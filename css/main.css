@@ -31,6 +31,10 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -67,6 +71,7 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    background-size: contain;
   }
 }
 
@@ -254,6 +259,10 @@ body.modal-open {
     font-size: 12px;
     line-height: 1.17;
   }
+}
+
+.site-nav__link--current {
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -671,9 +680,44 @@ body.modal-open {
   margin-left: auto;
   margin-right: auto;
   color: var(--primary-white-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/mobile/bg@1x-mobile.jpg);
+  background-position: center;
+  background-size: cover;
   text-align: center;
   margin-bottom: 30px;
+  max-width: 767px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/mobile/bg@2x-mobile.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/tablet/bg@1x-tablet.jpg);
+    max-width: 1199px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/tablet/bg@2x-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/desktop/bg@1x-desktop.jpg);
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero/desktop/bg@2x-desktop.jpg);
+  }
 }
 
 .hero__title {
@@ -1077,6 +1121,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer {
     height: 252px;
+    background-size: 10px;
   }
 }
 
